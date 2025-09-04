@@ -1,0 +1,4 @@
+# Python 3.11 requerido, no funciona en versiones mas nuevas
+Flask>=3.1.0
+rembg>=2.0.67
+

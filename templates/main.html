@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block titulo %} Principal {% endblock %}
+
+{% block contenido %}
+
+<div class="container px-3 py-3 text-center">
+    <h2 class="display-4 fw-bold">Quita fondo de imagenes</h2>
+    <p class="fs-3 ">Elimina el fondo a tus imagenes</p>
+    
+
+    <div class="drop-area col-8 mx-auto d-flex flex-column align-items-center justify-content-center" style="height: 50vh;">
+        <button class="btn btn-primary rounded-3 fs-5">Seleccionar Archivo</button>
+        <p class="mb-0 texto2">O</p>
+        <p class="texto">Arrastra aqui</p>
+        <div id="loader" class="spinner-border text-primary" role="status" hidden>
+            <span class="visually-hidden">Cargando...</span>
+        </div>
+        <input id="input-file" type="file" hidden multiple>
+    </div>
+
+</div>
+
+
+    <div class="container d-flex mt-3 p-0">
+        <buton id="d-todo" class="btn btn-success" hidden> Descargar todo</buton>
+    </div>
+
+    <div class="preview container p-2 mt-3">
+
+    </div>
+{% endblock%}
